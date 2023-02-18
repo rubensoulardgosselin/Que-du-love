@@ -1,5 +1,5 @@
 <?php
-
+  //traitement ruben
   echo "<H1>Informations récupérées par le serveur</H1>";
   echo 'Ces infos sont récupérées depuis le serveur web';
   echo '<ul>';
