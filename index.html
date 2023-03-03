@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Page de connexion</title>
-	<meta charset="utf8">
-	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<script src="js/script.js"></script>
-</head>
-<body>
+	<head>
+		<title>Page de connexion</title>
+		<meta charset="utf8">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="js/script.js"></script>
+	</head>
 
-	<form  class="popup" id="formulaire" method="post" action="https://dagfa.fr/nsi/traitement.php">
-		<label for="login">Identifiant</label> : <br>
-		<input type="text" id="login" name="login"
-				requiered minlength="5" maxlength="10" pattern="[A-Z][A-Za-z -_]{5,10}"
-				title="Entrez une majuscule, puis minuscules ou espace, -, _"/><br>
+	<body class="text-center bg-dark">
+		<div class="square square-lg bg-secondary m-auto square rounded p-5 bg-light">
+		
+			<main class="form-signin w-100 m-auto">
 
-		<label for="mail">Adresse mail</label> : <br>
-		<input type="email" id="mail" name="mail"><br>
+				<form method="post" action="traitement.php">
+					<img class="mb-4" src= images/bozo.jpg alt="Logo du site" width="60" height="60">
+					<h1 class="h3 mb-3 fw-normal">Connectez-vous</h1>
+				
+					<div class="form-floating">
+						<input type="email" class="form-control" id="floatingInput">
+						<label for="floatingInput">vous@exemple.com</label>
+					</div>
 
-		<label for="password">Mot de passe</label> : <br>
-		<input type="password" id="password" name="password"
-				required pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}"
-				title="Le mot de passe doit contenir au moins une majuscule, une minuscule et un chiffre"
-				onchange="visible()"/><br>
+					<div class="form-floating">
+						<input type="password" class="form-control" id="floatingPassword">
+						<label for="floatingPassword">Mot de passe</label>
+					</div>
 
-		<input type="hidden" name="ninja" value="Votre numéro de CB est 4979 1234 5678 9123"/>
+					<button class="w-100 btn btn-lg btn-primary" type="submit">Connexion</button>
 
-		<div class="buttonList">
-			<input type="button" value="Effacer" onclick="resetForm()"/>
-			<input type="submit" id="valider" name="valider" value="Valider" disabled=True/>
+					<div>
+						<a>Pas encore de compte ? </a>
+						<a href="page_inscritpion.html">cliquez ici.</a>
+					</div>
+
+				</form>
+
+			</main>
 		</div>
-	</form>
-
-</body>
+	</body>
 </html>
