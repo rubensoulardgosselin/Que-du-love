@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page d'Inscription</title>
+		<meta charset="utf8">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="js/script.js"></script>
+	</head>
+
+	<body class="text-center bg-dark">
+		<div class="square square-lg bg-secondary m-auto square rounded p-5 bg-light">
+		
+			<main class="form-signin w-100 m-auto">
+
+				<form method="post" action="traitement.php">
+					<img class="mb-4" src= images/diamond.png alt="Logo du site" width="60" height="60">
+					<h1 class="h3 mb-3 fw-normal">Inscription-vous</h1>
+				
+					<div class="form-floating">
+						<input type="email" class="form-control" id="floatingInput" id="mail" name="mail">
+						<label for="floatingInput">vous@example.com</label>
+					</div>
+
+					<div class="form-floating">
+						<input type="password" class="form-control" id="floatingPassword" id="password" name="password">
+						<label for="floatingPassword">Mot de passe</label>
+					</div>
+
+					<button class="w-100 btn btn-lg btn-primary" type="submit" id="valider" name="valider">Inscription</button>
+
+					<div>
+						<a>Vous avez déjà un compte ? </a>
+						<a href="page_connexion.html">cliquez ici.</a>
+					</div>
+
+				</form>
+
+			</main>
+		</div>
+	</body>
+</html>
