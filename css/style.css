@@ -83,3 +83,10 @@ body {
 	white-space: nowrap;
 	-webkit-overflow-scrolling: touch;
 }
+
+
+
+.carousel-itemimg {
+	height: 500px; /* ou toute autre valeur souhaitée */
+	object-fit: cover;
+  }
