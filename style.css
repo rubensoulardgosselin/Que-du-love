@@ -9,6 +9,7 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #f5f5f5;
+  text-align: center;
 }
 
 .form-signin {
@@ -89,4 +90,13 @@ body {
 .carousel-itemimg {
 	height: 500px; /* ou toute autre valeur souhaitée */
 	object-fit: cover;
-  }
+}
+
+.align-center{
+	text-align: center;
+}
+
+
+.jsp{
+	padding-left: 500px;
+}
